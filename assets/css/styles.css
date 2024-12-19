@@ -745,9 +745,68 @@ h1, h2, h3, h4 {
 
 /*======= MEDIA =======*/
 @media screen and (min-width: 320px) and (max-width: 576px){
+  /* BOTON DE WHATSAPP */
+  .button{
+    font-size: 1.4rem;
+    padding: .85rem 1.75rem;
+    border: 3px solid var(--text-color-descriptions);
+    column-gap: .75rem;
+  }
+  
+  .button span{
+    font-size: 2.25rem;
+  }
+
+  /* HOME */
+  .home__container{
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .home__logo{
+    justify-self: center;
+    width: 88%;
+    min-width: 32rem;
+    max-width: 38rem;
+    height: 18rem;
+    font-size: 11rem;
+    background-size: 100%;
+  }
+  .letter__main{
+    top: 1rem;
+    left: 1rem;
+    width: auto;
+    height: auto;
+  }
+  .both__letters{
+    top: cal(1em - 3rem);
+    left: 1em; 
+  }
+  .secundary__letters{
+    top: 3em;
+    left: 5em;
+    font-size: calc(1em - 8rem);
+  }
+
+  /* NEW */
+  .new__container{
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .new__container{
+    padding: 2.5rem;
+  }
+
+  /* SHOP */
+  .shop__container{
+    grid-template-columns: 18rem;
+    grid-auto-flow: row;
+    justify-content: center;
+  }
+
+  /* GALERIA */
   .galery__section{
-    column-gap: 0;
-    row-gap: 3rem;
+    row-gap: 1.2rem;
   }
 
   .galery__header,
@@ -759,11 +818,12 @@ h1, h2, h3, h4 {
   
   .galery__header{
     text-align: center;
-    padding: 2rem;
+    margin: auto 0;
+    padding: 0 ;
   }
   
   .galery__title{
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
   }
   
   .galery__description{
@@ -776,15 +836,9 @@ h1, h2, h3, h4 {
     border: .75rem ridge var(--text-color-descriptions);
   }
   
-  .galery__video{
-    width: 32rem;
-    height: 55rem;
-    filter: drop-shadow(var(--shadow-img));
-  }
-  
-  .galery__photo{
-    width: 100%;
-    height: 55rem;
+  .galery__video,.galery__photo{
+    width: 25rem;
+    height: 43.5rem;
     filter: drop-shadow(var(--shadow-img));
   }
 }
@@ -1113,14 +1167,9 @@ h1, h2, h3, h4 {
 }
 
 @media screen and (max-width: 576px){
-  .new__container,
   .caret__container{
     grid-template-columns: 40rem;
     justify-content: center;
-  }
-
-  .new__container{
-    padding: 3rem;
   }
 
   .home__data{
@@ -1129,11 +1178,6 @@ h1, h2, h3, h4 {
 
   .home__buttons{
     align-items: center;
-  }
-
-  .shop__container{
-    grid-template-columns: repeat(2, 16rem);
-    justify-content: center;
   }
 
   .footer__container, .footer__content{
