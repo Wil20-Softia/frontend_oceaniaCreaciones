@@ -19,7 +19,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=award_star,contacts_product,heap_snapshot_thumbnail,home,spa,storefront" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=add,add_shopping_cart,award_star,contacts_product,heap_snapshot_thumbnail,home,remove,shopping_bag,spa,storefront" />
   </head>
   <body>
 
@@ -124,15 +124,15 @@
           </div>
           <div class="new__content grid">
             <article class="new__card">
-              <img src="assets/img/productos/new-jabon-aloeVera-trans.png" alt="Jabón de Aloe Vera" class="new__img">
+              <img src="assets/img/productos/new-jabon-aloeVera-trans.webp" alt="Jabón de Aloe Vera" class="new__img">
               <h2 class="new__title">Jabón de Aloe Vera (cuida tu piel)</h2>
             </article>
             <article class="new__card">
-              <img src="assets/img/productos/new-jabon-intimo-trans.png" alt="Jabón Intimo" class="new__img">
+              <img src="assets/img/productos/new-jabon-intimo-trans.webp" alt="Jabón Intimo" class="new__img">
               <h2 class="new__title">Jabón Intimo (cuída tu ph)</h2>
             </article>
             <article class="new__card">
-              <img src="assets/img/productos/new-jabon-menta-trans.png" alt="Jabón de Menta" class="new__img">
+              <img src="assets/img/productos/new-jabon-menta-trans.webp" alt="Jabón de Menta" class="new__img">
               <h2 class="new__title">Jabón de menta (refrescante)</h2>
             </article>
           </div>
@@ -142,112 +142,424 @@
       <section class="shop section" id="shop">
         <h2 class="section__title">Catálago de productos</h2>
         <div class="shop__container grid">
-          <article class="shop__card">
-            <img src="assets/img/productos/new-jabon-aloeVera-trans.png" alt="Jabón Aloe Vera" class="shop__img">
-            <h3 class="shop__title">Jabón de Aloe Vera</h3>
-            <span class="shop__price">S./ 12.00</span>
-            <button class="shop__button">
-              <i class="ri-shopping-bag-line"></i>
-            </button>
+          
+          <article class="shop__card" id="product">
+            <header class="shop__title">
+              <h2 class="product__name">
+                <span class="material-symbols-outlined">
+                  shopping_bag
+                </span>
+                Jabón de Aloe Vera
+              </h2>
+              <h4 class="product__category">Cuidado de la piel</h4>
+            </header>
+            <div class="shop__buy">
+              <span class="shop__labels">Cant: </span>
+              <button class="buy__buttons remove__product">
+                <span class="material-symbols-outlined">remove</span>
+              </button>
+              <span class="product__quantity">30</span>
+              <button class="buy__buttons add__product">
+                <span class="material-symbols-outlined">add</span>
+              </button>
+              <button class="add__cart">
+                <span class="material-symbols-outlined">
+                  add_shopping_cart
+                </span>
+              </button>
+            </div>
+            <figure class="shop__img">
+              <img src="assets/img/productos/new-jabon-aloeVera-trans.webp" alt="Jabón Aloe Vera - Este jabon sirve para el cuidado de la piel y ademas te humecta la dermis" class="product__img">
+              <figcaption class="shop__price">
+                S./ <strong class="product__price">12.00</strong>
+              </figcaption>
+            </figure>
+            
+            <h3 class="product__description">Este jabon sirve para el cuidado de la piel y ademas te humecta la dermis</h3>
           </article>
 
-          <article class="shop__card">
-            <img src="assets/img/productos/new-jabon-intimo-trans.png" alt="Jabón Intimo" class="shop__img">
-            <h3 class="shop__title">Jabón Intimo</h3>
-            <span class="shop__price">S./ 18.00</span>
-            <button class="shop__button">
-              <i class="ri-shopping-bag-line"></i>
-            </button>
+          <article class="shop__card" id="product">
+            <header class="shop__title">
+              <h2 class="product__name">
+                <span class="material-symbols-outlined">
+                  shopping_bag
+                </span>
+                Jabón para Rosacea
+              </h2>
+              <h4 class="product__category">Cuidado de la piel</h4>
+            </header>
+            <div class="shop__buy">
+              <span class="shop__labels">Cant: </span>
+              <button class="buy__buttons remove__product">
+                <span class="material-symbols-outlined">remove</span>
+              </button>
+              <span class="product__quantity">30</span>
+              <button class="buy__buttons add__product">
+                <span class="material-symbols-outlined">add</span>
+              </button>
+              <button class="add__cart">
+                <span class="material-symbols-outlined">
+                  add_shopping_cart
+                </span>
+              </button>
+            </div>
+            <figure class="shop__img">
+              <img src="assets/img/productos/shop-jabon-rosacea-trans.webp" alt="Jabón para la Rosácea" class="product__img">
+              <figcaption class="shop__price">
+                S./ <strong class="product__price">12.00</strong>
+              </figcaption>
+            </figure>
+            
+            <h3 class="product__description">Estas pasando por un mal momento con rosaceas, lleva nuestro jabon especial para combatirla 100% comprobado y 100% natural</h3>
           </article>
 
-          <article class="shop__card">
-            <img src="assets/img/productos/new-jabon-menta-trans.png" alt="Jabón de menta" class="shop__img">
-            <h3 class="shop__title">Jabón de menta</h3>
-            <span class="shop__price">S./ 15.00</span>
-            <button class="shop__button">
-              <i class="ri-shopping-bag-line"></i>
-            </button>
+          <article class="shop__card" id="product">
+            <header class="shop__title">
+              <h2 class="product__name">
+                <span class="material-symbols-outlined">
+                  shopping_bag
+                </span>
+                Jabón de Maracuya y Chía
+              </h2>
+              <h4 class="product__category">Cuidado de la piel</h4>
+            </header>
+            <div class="shop__buy">
+              <span class="shop__labels">Cant: </span>
+              <button class="buy__buttons remove__product">
+                <span class="material-symbols-outlined">remove</span>
+              </button>
+              <span class="product__quantity">30</span>
+              <button class="buy__buttons add__product">
+                <span class="material-symbols-outlined">add</span>
+              </button>
+              <button class="add__cart">
+                <span class="material-symbols-outlined">
+                  add_shopping_cart
+                </span>
+              </button>
+            </div>
+            <figure class="shop__img">
+              <img src="assets/img/productos/shop-jabon-maracuya-chia-trans.webp" alt="Jabón de Maracuya y Chía" class="product__img">
+              <figcaption class="shop__price">
+                S./ <strong class="product__price">12.00</strong>
+              </figcaption>
+            </figure>
+            
+            <h3 class="product__description">Maracuya y Chía, perfecta combinación para combatir acne, piel grasa y demas problemas cutaneos</h3>
           </article>
 
-          <article class="shop__card">
-            <img src="assets/img/productos/shop-jabon-almendras-trans.png" alt="Jabón de Almendras" class="shop__img">
-            <h3 class="shop__title">Jabon de almendras</h3>
-            <span class="shop__price">S./ 16.00</span>
-            <button class="shop__button">
-              <i class="ri-shopping-bag-line"></i>
-            </button>
+          <article class="shop__card" id="product">
+            <header class="shop__title">
+              <h2 class="product__name">
+                <span class="material-symbols-outlined">
+                  shopping_bag
+                </span>
+                Jabón de Manzanilla
+              </h2>
+              <h4 class="product__category">Cuidado de la piel</h4>
+            </header>
+            <div class="shop__buy">
+              <span class="shop__labels">Cant: </span>
+              <button class="buy__buttons remove__product">
+                <span class="material-symbols-outlined">remove</span>
+              </button>
+              <span class="product__quantity">30</span>
+              <button class="buy__buttons add__product">
+                <span class="material-symbols-outlined">add</span>
+              </button>
+              <button class="add__cart">
+                <span class="material-symbols-outlined">
+                  add_shopping_cart
+                </span>
+              </button>
+            </div>
+            <figure class="shop__img">
+              <img src="assets/img/productos/shop-jabon-manzanilla-trans.webp" alt="Jabón de Manzanilla" class="product__img">
+              <figcaption class="shop__price">
+                S./ <strong class="product__price">12.00</strong>
+              </figcaption>
+            </figure>
+            
+            <h3 class="product__description">Si necesitas tener una piel saludable y con buena salud, compra esta solución y veraz resultados en la primera semana</h3>
           </article>
 
-          <article class="shop__card">
-            <img src="assets/img/productos/shop-jabon-avena-miel-trans.png" alt="Jabón de Avena y Miel" class="shop__img">
-            <h3 class="shop__title">Jabón de avena y miel</h3>
-            <span class="shop__price">S./ 16.00</span>
-            <button class="shop__button">
-              <i class="ri-shopping-bag-line"></i>
-            </button>
+          <article class="shop__card" id="product">
+            <header class="shop__title">
+              <h2 class="product__name">
+                <span class="material-symbols-outlined">
+                  shopping_bag
+                </span>
+                Jabón de Lavanda
+              </h2>
+              <h4 class="product__category">Cuidado de la piel</h4>
+            </header>
+            <div class="shop__buy">
+              <span class="shop__labels">Cant: </span>
+              <button class="buy__buttons remove__product">
+                <span class="material-symbols-outlined">remove</span>
+              </button>
+              <span class="product__quantity">30</span>
+              <button class="buy__buttons add__product">
+                <span class="material-symbols-outlined">add</span>
+              </button>
+              <button class="add__cart">
+                <span class="material-symbols-outlined">
+                  add_shopping_cart
+                </span>
+              </button>
+            </div>
+            <figure class="shop__img">
+              <img src="assets/img/productos/shop-jabon-lavanda-trans.webp" alt="Jabón de Lavanda" class="product__img">
+              <figcaption class="shop__price">
+                S./ <strong class="product__price">12.00</strong>
+              </figcaption>
+            </figure>
+            
+            <h3 class="product__description">Delicioso jabon de lavanda ideal para las noches antes gracias a su fragancia 100% natural obtendras un sueño mas relajante</h3>
           </article>
 
-          <article class="shop__card">
-            <img src="assets/img/productos/shop-jabon-colageno-trans.png" alt="Jabón de Colágeno" class="shop__img">
-            <h3 class="shop__title">Jabón de colágeno</h3>
-            <span class="shop__price">S./ 16.00</span>
-            <button class="shop__button">
-              <i class="ri-shopping-bag-line"></i>
-            </button>
+          <article class="shop__card" id="product">
+            <header class="shop__title">
+              <h2 class="product__name">
+                <span class="material-symbols-outlined">
+                  shopping_bag
+                </span>Jabón Humectante
+              </h2>
+              <h4 class="product__category">Cuidado de la piel</h4>
+            </header>
+            <div class="shop__buy">
+              <span class="shop__labels">Cant: </span>
+              <button class="buy__buttons remove__product">
+                <span class="material-symbols-outlined">remove</span>
+              </button>
+              <span class="product__quantity">30</span>
+              <button class="buy__buttons add__product">
+                <span class="material-symbols-outlined">add</span>
+              </button>
+              <button class="add__cart">
+                <span class="material-symbols-outlined">
+                  add_shopping_cart
+                </span>
+              </button>
+            </div>
+            <figure class="shop__img">
+              <img src="assets/img/productos/shop-jabon-humectante-trans.webp" alt="Jabón Humectante" class="product__img">
+              <figcaption class="shop__price">
+                S./ <strong class="product__price">12.00</strong>
+              </figcaption>
+            </figure>
+            
+            <h3 class="product__description">Increible solucion para mantenerte reluciente y con una piel 100% saludable</h3>
           </article>
 
-          <article class="shop__card">
-            <img src="assets/img/productos/shop-jabon-curcuma-trans.png" alt="Jabón de Cúrcuma" class="shop__img">
-            <h3 class="shop__title">Jabón de cúrcuma</h3>
-            <span class="shop__price">S./ 16.00</span>
-            <button class="shop__button">
-              <i class="ri-shopping-bag-line"></i>
-            </button>
+          <article class="shop__card" id="product">
+            <header class="shop__title">
+              <h2 class="product__name">
+                <span class="material-symbols-outlined">
+                  shopping_bag
+                </span>
+                Jabón de Cúrcuma
+              </h2>
+              <h4 class="product__category">Cuidado de la piel</h4>
+            </header>
+            <div class="shop__buy">
+              <span class="shop__labels">Cant: </span>
+              <button class="buy__buttons remove__product">
+                <span class="material-symbols-outlined">remove</span>
+              </button>
+              <span class="product__quantity">30</span>
+              <button class="buy__buttons add__product">
+                <span class="material-symbols-outlined">add</span>
+              </button>
+              <button class="add__cart">
+                <span class="material-symbols-outlined">
+                  add_shopping_cart
+                </span>
+              </button>
+            </div>
+            <figure class="shop__img">
+              <img src="assets/img/productos/shop-jabon-curcuma-trans.webp" alt="Jabón de Cúrcuma" class="product__img">
+              <figcaption class="shop__price">
+                S./ <strong class="product__price">12.00</strong>
+              </figcaption>
+            </figure>
+            
+            <h3 class="product__description">jabon de curcuma especial antibiotico, utilizado para pieles maltratadas y resecas</h3>
           </article>
 
-          <article class="shop__card">
-            <img src="assets/img/productos/shop-jabon-humectante-trans.png" alt="Jabón Humectante" class="shop__img">
-            <h3 class="shop__title">Jabón humectante</h3>
-            <span class="shop__price">S./ 16.00</span>
-            <button class="shop__button">
-              <i class="ri-shopping-bag-line"></i>
-            </button>
+          <article class="shop__card" id="product">
+            <header class="shop__title">
+              <h2 class="product__name">
+                <span class="material-symbols-outlined">
+                  shopping_bag
+                </span>
+                Jabón de Colágeno
+              </h2>
+              <h4 class="product__category">Cuidado de la piel</h4>
+            </header>
+            <div class="shop__buy">
+              <span class="shop__labels">Cant: </span>
+              <button class="buy__buttons remove__product">
+                <span class="material-symbols-outlined">remove</span>
+              </button>
+              <span class="product__quantity">30</span>
+              <button class="buy__buttons add__product">
+                <span class="material-symbols-outlined">add</span>
+              </button>
+              <button class="add__cart">
+                <span class="material-symbols-outlined">
+                  add_shopping_cart
+                </span>
+              </button>
+            </div>
+            <figure class="shop__img">
+              <img src="assets/img/productos/shop-jabon-colageno-trans.webp" alt="Jabón de Colágeno" class="product__img">
+              <figcaption class="shop__price">
+                S./ <strong class="product__price">12.00</strong>
+              </figcaption>
+            </figure>
+            
+            <h3 class="product__description">como su nombre lo indica importante produto para recuperacion de celulas y reparacion profunda antiarrugas gracias a su cantidad de colageno</h3>
           </article>
 
-          <article class="shop__card">
-            <img src="assets/img/productos/shop-jabon-lavanda-trans.png" alt="Jabón de Lavanda" class="shop__img">
-            <h3 class="shop__title">Jabón de lavanda</h3>
-            <span class="shop__price">S./ 16.00</span>
-            <button class="shop__button">
-              <i class="ri-shopping-bag-line"></i>
-            </button>
+          <article class="shop__card" id="product">
+            <header class="shop__title">
+              <h2 class="product__name">
+                <span class="material-symbols-outlined">
+                  shopping_bag
+                </span>
+                Jabón de Avena y Miel
+              </h2>
+              <h4 class="product__category">Cuidado de la piel</h4>
+            </header>
+            <div class="shop__buy">
+              <span class="shop__labels">Cant: </span>
+              <button class="buy__buttons remove__product">
+                <span class="material-symbols-outlined">remove</span>
+              </button>
+              <span class="product__quantity">30</span>
+              <button class="buy__buttons add__product">
+                <span class="material-symbols-outlined">add</span>
+              </button>
+              <button class="add__cart">
+                <span class="material-symbols-outlined">
+                  add_shopping_cart
+                </span>
+              </button>
+            </div>
+            <figure class="shop__img">
+              <img src="assets/img/productos/shop-jabon-avena-miel-trans.webp" alt="Jabón de Avena y Miel" class="product__img">
+              <figcaption class="shop__price">
+                S./ <strong class="product__price">12.00</strong>
+              </figcaption>
+            </figure>
+            
+            <h3 class="product__description">jabon especial para la hidratacion y limpieza profunda, recomendado para el lavado facial</h3>
           </article>
 
-          <article class="shop__card">
-            <img src="assets/img/productos/shop-jabon-manzanilla-trans.png" alt="Jabón de Manzanilla" class="shop__img">
-            <h3 class="shop__title">Jabón de manzanilla</h3>
-            <span class="shop__price">S./ 16.00</span>
-            <button class="shop__button">
-              <i class="ri-shopping-bag-line"></i>
-            </button>
+          <article class="shop__card" id="product">
+            <header class="shop__title">
+              <h2 class="product__name">
+                <span class="material-symbols-outlined">
+                  shopping_bag
+                </span>
+                Jabón de Almendras
+              </h2>
+              <h4 class="product__category">Cuidado de la piel</h4>
+            </header>
+            <div class="shop__buy">
+              <span class="shop__labels">Cant: </span>
+              <button class="buy__buttons remove__product">
+                <span class="material-symbols-outlined">remove</span>
+              </button>
+              <span class="product__quantity">30</span>
+              <button class="buy__buttons add__product">
+                <span class="material-symbols-outlined">add</span>
+              </button>
+              <button class="add__cart">
+                <span class="material-symbols-outlined">
+                  add_shopping_cart
+                </span>
+              </button>
+            </div>
+            <figure class="shop__img">
+              <img src="assets/img/productos/shop-jabon-almendras-trans.webp" alt="Jabón de Almendras" class="product__img">
+              <figcaption class="shop__price">
+                S./ <strong class="product__price">12.00</strong>
+              </figcaption>
+            </figure>
+            
+            <h3 class="product__description">ideal para nutrir la piel, elimina manchas e impurezas producida por el ambiente</h3>
           </article>
 
-          <article class="shop__card">
-            <img src="assets/img/productos/shop-jabon-maracuya-chia-trans.png" alt="Jabón de Maracuya y Chía" class="shop__img">
-            <h3 class="shop__title">Jabón de maracuya y chía</h3>
-            <span class="shop__price">S./ 16.00</span>
-            <button class="shop__button">
-              <i class="ri-shopping-bag-line"></i>
-            </button>
+          <article class="shop__card" id="product">
+            <header class="shop__title">
+              <h2 class="product__name">
+                <span class="material-symbols-outlined">
+                  shopping_bag
+                </span>
+                Jabón de Menta
+              </h2>
+              <h4 class="product__category">Cuidado de la piel</h4>
+            </header>
+            <div class="shop__buy">
+              <span class="shop__labels">Cant: </span>
+              <button class="buy__buttons remove__product">
+                <span class="material-symbols-outlined">remove</span>
+              </button>
+              <span class="product__quantity">30</span>
+              <button class="buy__buttons add__product">
+                <span class="material-symbols-outlined">add</span>
+              </button>
+              <button class="add__cart">
+                <span class="material-symbols-outlined">
+                  add_shopping_cart
+                </span>
+              </button>
+            </div>
+            <figure class="shop__img">
+              <img src="assets/img/productos/new-jabon-menta-trans.webp" alt="Jabón de menta" class="product__img">
+              <figcaption class="shop__price">
+                S./ <strong class="product__price">12.00</strong>
+              </figcaption>
+            </figure>
+            
+            <h3 class="product__description">jabon super refresacante para relajarte despues de una jornada laboral muy estresante</h3>
           </article>
 
-          <article class="shop__card">
-            <img src="assets/img/productos/shop-jabon-rosacea-trans.png" alt="Jabón para la Rosácea" class="shop__img">
-            <h3 class="shop__title">Jabón para la Rosácea</h3>
-            <span class="shop__price">S./ 16.00</span>
-            <button class="shop__button">
-              <i class="ri-shopping-bag-line"></i>
-            </button>
+          <article class="shop__card" id="product">
+            <header class="shop__title">
+              <h2 class="product__name">
+                <span class="material-symbols-outlined">
+                  shopping_bag
+                </span>
+                Jabón Intimo
+              </h2>
+              <h4 class="product__category">Cuidado de la piel</h4>
+            </header>
+            <div class="shop__buy">
+              <span class="shop__labels">Cant: </span>
+              <button class="buy__buttons remove__product">
+                <span class="material-symbols-outlined">remove</span>
+              </button>
+              <span class="product__quantity">30</span>
+              <button class="buy__buttons add__product">
+                <span class="material-symbols-outlined">add</span>
+              </button>
+              <button class="add__cart">
+                <span class="material-symbols-outlined">
+                  add_shopping_cart
+                </span>
+              </button>
+            </div>
+            <figure class="shop__img">
+              <img src="assets/img/productos/new-jabon-intimo-trans.webp" alt="Jabón Intimo" class="product__img">
+              <figcaption class="shop__price">
+                S./ <strong class="product__price">12.00</strong>
+              </figcaption>
+            </figure>
+            
+            <h3 class="product__description">utilizalo solo para las partes intimas para mantener saludable tu ph</h3>
           </article>
         </div>
       </section>
@@ -255,7 +567,7 @@
       <section class="care section" id="care">
         <h2 class="section__title">¿Por qué elegir nuestros jabones?</h2>
         <div class="care__container grid">
-          <img src="assets/img/productos/jabones-tripack.png" alt="Cactus" class="care__img">
+          <img src="assets/img/productos/jabones-tripack.webp" alt="Cactus" class="care__img">
           <ul class="care__list">
             <li class="care__item">
               <i class="ri-checkbox-fill"></i>
@@ -295,47 +607,47 @@
             <div class="relative h-full overflow-hidden rounded-lg">
               <!-- Item 1 -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="assets/img/variedades/recuerdos1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src="assets/img/variedades/recuerdos1.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <!-- Item 2 -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                  <img src="assets/img/variedades/recuerdos2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <img src="assets/img/variedades/recuerdos2.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <!-- Item 3 -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="assets/img/variedades/recuerdos3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <img src="assets/img/variedades/recuerdos3.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <!-- Item 4 -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="assets/img/variedades/recuerdos4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <img src="assets/img/variedades/recuerdos4.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <!-- Item 5 -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="assets/img/variedades/recuerdos5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <img src="assets/img/variedades/recuerdos5.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <!-- Item 6 -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="assets/img/variedades/recuerdos6.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <img src="assets/img/variedades/recuerdos6.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <!-- Item 6a -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="assets/img/variedades/recuerdos6a.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <img src="assets/img/variedades/recuerdos6a.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <!-- Item 7 -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="assets/img/variedades/recuerdos7.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <img src="assets/img/variedades/recuerdos7.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <!-- Item 8 -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="assets/img/variedades/recuerdos8.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <img src="assets/img/variedades/recuerdos8.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <!-- Item 9 -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="assets/img/variedades/recuerdos9.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <img src="assets/img/variedades/recuerdos9.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
               <!-- Item 10 -->
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="assets/img/variedades/recuerdos10.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <img src="assets/img/variedades/recuerdos10.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
               </div>
             </div>
             <button type="button" class="galery__arrows arrow-left arrow" data-carousel-prev>
@@ -360,7 +672,7 @@
       <section class="contact section" id="contact">
         <h2 class="section__title">Haz un pedido ahora<br> ¡CONTÁCTANOS!</h2>
         <div class="contact__container grid">
-          <img src="assets/img/presentacion_principal.png" alt="Cactus" class="contact__img">
+          <img src="assets/img/presentacion_principal.webp" alt="Cactus" class="contact__img">
           <div class="contact__content">
             <div>
               <h3 class="contact__title">Escríbenos</h3>
